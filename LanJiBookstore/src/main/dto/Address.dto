@@ -1,0 +1,11 @@
+export org.lanmao.model.Address
+    -> package org.lanmao.model.dto
+
+input AddressInput{
+    #allScalars
+}
+
+input AddressSaveInput{
+    #allScalars
+    id(accounts) as accountIds
+}

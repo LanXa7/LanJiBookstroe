@@ -1,0 +1,24 @@
+export org.lanmao.model.Book
+    -> package org.lanmao.model.dto
+
+BookPage{
+    #allScalars
+    id(type)
+}
+
+input BookChangeStatusInput{
+    id
+    status
+}
+
+input BookUpdateInput{
+    #allScalars
+    id(type)
+}
+
+input BookInsertInput{
+    #allScalars
+    id(type)
+}
+
+

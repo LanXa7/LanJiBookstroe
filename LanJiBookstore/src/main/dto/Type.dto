@@ -1,0 +1,7 @@
+export org.lanmao.model.Type
+    -> package org.lanmao.model.dto
+
+input typeInput{
+    #allScalars
+    -id
+}

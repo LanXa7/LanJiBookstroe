@@ -1,0 +1,54 @@
+export org.lanmao.model.Indent
+    -> package org.lanmao.model.dto
+
+input BuyBookInput{
+    totalNumber
+    totalPrice
+    id(book)
+    id(account)
+    id(address)
+}
+
+
+IndentPage{
+    #allScalars
+    flat(book) {
+        as(^ -> book){
+            id
+            name
+            author
+            cover
+            press
+            isbn
+        }
+
+    }
+    flat(account) {
+        as(^->account){
+            id
+            username
+        }
+    }
+    flat(address) {
+        as(^ -> address) {
+            #allScalars
+        }
+    }
+}
+
+input ChangeStatusInput{
+    id
+    status
+}
+
+input PersonChangeIndentInput{
+    id
+    totalPrice
+    totalNumber
+    id(address)
+}
+
+input ChangeIndentInput{
+    id
+    id(address)
+}

@@ -1,0 +1,10 @@
+export org.lanmao.model.Account
+    -> package org.lanmao.model.dto
+
+AccountVO{
+    #allScalars
+    -password
+    addresses{
+        #allScalars
+    }
+}
